@@ -1,0 +1,7 @@
+address = "127.0.0.1"
+port = 8080
+admin_token = "foobar"
+
+[robots.foo]
+name = "test"
+vdon_room = "rowobots1"

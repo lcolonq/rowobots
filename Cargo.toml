@@ -1,0 +1,20 @@
+[package]
+name = "rowobots"
+version = "0.1.0"
+authors = ["LLLL Colonq <llll@colonq.computer>"]
+edition = "2021"
+
+[profile.release]
+opt-level = 2
+codegen-units = 1
+
+[profile.dev.package."*"]
+opt-level = 2
+
+[dependencies]
+rocket = {package = "rocket", path = "deps/Rocket/core/lib", features = ["json"]} # web framework
+ws = {package = "rocket_ws", path = "deps/Rocket/contrib/ws"} # websockets
+serde = {version = "*", features = ["derive"]} # serialization
+serde_json = "*" # json
+figment = "*" # configuration
+rand = "*" # rng
