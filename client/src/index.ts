@@ -89,7 +89,6 @@ img {
 
   async sendCommand(button: string, press: string) {
     if (window.room) {
-      console.log([button, press]);
       const resp = await fetch(`${Consts.API_URL}/api/bot/${encodeURIComponent(window.room.id)}`, {
         method: "POST",
         headers: {
@@ -103,7 +102,6 @@ img {
           },
         }),
       });
-      console.log(resp.status);
     }
   }
 
