@@ -64,8 +64,8 @@ pub fn get_admin(web: &State<WebState>, token: &str) -> Result<Json<AdminRespons
     }))
 }
 
-#[rocket::get("/admin/<id>?<token>")]
-pub fn get_admin_bot_channel<'r>(webst: &State<WebState>, token: &'r str, id: &'r str, ws: ws::WebSocket, addr: SocketAddr) -> Result<ws::Channel<'r>, Status> {
+#[rocket::get("/channel/<id>?<token>")]
+pub fn get_channel_bot<'r>(webst: &State<WebState>, token: &'r str, id: &'r str, ws: ws::WebSocket, addr: SocketAddr) -> Result<ws::Channel<'r>, Status> {
     
     let _ = webst.check_auth(token);
     let amst = webst.inner().st.clone();

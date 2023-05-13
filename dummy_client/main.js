@@ -1,6 +1,6 @@
 import WebSocket from "ws";
 
-const ws = new WebSocket("ws://127.0.0.1:8080/api/admin/foo?token=foobar");
+const ws = new WebSocket("wss://colonq.computer/rowobots/api/admin/foo?token=foobar");
 
 ws.on("error", console.error);
 

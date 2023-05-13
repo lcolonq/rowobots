@@ -21,7 +21,7 @@ async fn main() -> Result<(), rocket::Error> {
         ])
         .mount("/api", rocket::routes![
             web::get_admin,
-            web::get_admin_bot_channel,
+            web::get_channel_bot,
             web::put_admin_room,
             web::get_bot,
             web::get_room,
