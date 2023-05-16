@@ -161,7 +161,7 @@ img {
 <div id="robot">
   <div id="robot-name">${e.config.name}</div>
   <div id="robot-room">
-    <a target="_blank" rel="noopener noreferrer" href="/#${e.room}">${e.room}</a>
+    <a target="_blank" rel="noopener noreferrer" href="/rowobots#${e.room}">${e.room}</a>
     <button @click=${this.setRandomRoom}>↻</button>
   </div>
   <div id="robot-vdon"><a target="_blank" rel="noopener noreferrer" href="https://vdo.ninja?push=${e.config.vdon_room}">${e.config.vdon_room}</a></div>

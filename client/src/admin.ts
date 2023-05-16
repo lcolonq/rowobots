@@ -146,7 +146,7 @@ export class Robot extends LitElement {
 <div id="robot">
   <div id="robot-name">${robot.config.name}</div>
   <div id="robot-room">
-    <a target="_blank" rel="noopener noreferrer" href="/#${robot.room}">${robot.room}</a>
+    <a target="_blank" rel="noopener noreferrer" href="/rowobots#${robot.room}">${robot.room}</a>
     <button @click=${this.setRandomRoom}>↻</button>
   </div>
   <div id="robot-vdon"><a target="_blank" rel="noopener noreferrer" href="https://vdo.ninja?push=${robot.config.vdon_room}">${robot.config.vdon_room}</a></div>
