@@ -5,3 +5,7 @@ admin_token = "foobar"
 [robots.foo]
 name = "test"
 vdon_room = "rowobots1"
+
+[robots.bar]
+name = "Hello World"
+vdon_room = "rowobots2"

@@ -1,8 +1,8 @@
 import WebSocket from "ws";
 
-const ws = new WebSocket("wss://colonq.computer/rowobots/api/admin/foo?token=foobar");
+const ws = new WebSocket("wss://colonq.computer/rowobots/api/channel/foo?token=foobar");
 
-ws.on("error", console.error);
+ws.on("error", console.log);
 
 ws.on("open", function open() {
     ws.send("something");
